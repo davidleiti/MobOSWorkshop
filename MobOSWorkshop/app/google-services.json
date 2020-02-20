@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "9824980626",
+    "firebase_url": "https://mobosworkshop.firebaseio.com",
+    "project_id": "mobosworkshop",
+    "storage_bucket": "mobosworkshop.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:9824980626:android:b0719240c9be709373e04b",
+        "android_client_info": {
+          "package_name": "ro.david.mobosworkshop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "9824980626-19p8j4t5mpd7pb0lb907r90es3e6qqgt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ro.david.mobosworkshop",
+            "certificate_hash": "0bf7b6f7183d4372c55b9e34eef50a137ff6654d"
+          }
+        },
+        {
+          "client_id": "9824980626-qkseu4bcjo74229tq7cijubqdjchsdvb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDI7VT_Tjn4V4UaX9NDdBwyW9Yrnd_FcZk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "9824980626-qkseu4bcjo74229tq7cijubqdjchsdvb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
