@@ -1,12 +1,14 @@
 package ro.david.mobosworkshop
 
 import android.os.Bundle
+import android.widget.Toast
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
+import ro.david.mobosworkshop.data.AuthenticationManager
 
 class MainActivity : AppCompatActivity() {
 
@@ -25,5 +27,16 @@ class MainActivity : AppCompatActivity() {
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+
+        val authManager = AuthenticationManager()
+        if (!authManager.isSignedIn()) {
+            authManager.signInAnonymously { user ->
+                user?.let {
+                    Toast.makeText(this, "Sign in successful", Toast.LENGTH_SHORT).show()
+                } ?: run {
+                    Toast.makeText(this, "Sign in failed", Toast.LENGTH_SHORT).show()
+                }
+            }
+        }
     }
 }
